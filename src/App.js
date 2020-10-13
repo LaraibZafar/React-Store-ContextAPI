@@ -50,9 +50,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      
       <CurrentUserContext.Provider value = {this.state.currentUser}>
         <Header />
         </CurrentUserContext.Provider>
+
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
